@@ -1,0 +1,94 @@
+/*Resets*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+button:focus {outline:0;}
+
+/*Stopwatch container styles*/
+.stopwatch-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #201F29;
+}
+
+/*Clock face styles*/
+.clock-face {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    color: #43BEA8;
+    font-size: 72px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.clock-face > span {
+    display: inline-block;
+    min-width: 90px;
+}
+
+/*Stopwatch control styles*/
+.stopwatch-controls {
+    overflow: hidden;
+    text-align: center;
+}
+
+.stopwatch-controls > button {
+    width: 30%;
+    max-width: 300px;
+    display: inline-block;
+    margin-top: 60px;
+    padding: 15px;
+    border-radius: 2px;
+    border: none;
+    font-size: 14px;
+}
+
+/*Button styles*/
+.start-stop-resume {
+    background-color: #f2f2f2;
+    color: #43BEA8;
+    margin-right: 20px;
+    transition:color .2s ease-out, background .4s ease-in;
+}
+
+.start-stop-resume:hover,
+#start-stop-resume:active {
+    background-color: #43BEA8;
+    color: #f2f2f2;
+    transition:color .2s ease-out, background .4s ease-in;
+}
+
+.stop {
+    background-color: #f2f2f2 !important;
+    color: #ff3333 !important;
+    transition:color .2s ease-out, background .4s ease-in;
+}
+
+.stop:hover {
+    background-color: #ff3333 !important;
+    color: #f2f2f2 !important;
+    transition:color .2s ease-out, background .4s ease-in;
+}
+
+
+.reset {
+    background-color: #f2f2f2;
+    color: #ff3333;
+    transition:color .2s ease-out, background .4s ease-in;
+}
+
+.reset:hover {
+    background-color: #ff3333;
+    color: #f2f2f2;
+    transition:color .2s ease-out, background .4s ease-in;
+}
